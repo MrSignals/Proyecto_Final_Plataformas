@@ -1,0 +1,15 @@
+CREATE DATABASE proyectoFinal;
+
+use proyectoFinal;
+
+CREATE TABLE personas(
+    idPersona INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(30) NOT NULL,
+    Apellido VARCHAR(30) NOT NULL,
+    Email VARCHAR(30) NOT NULL,
+    Edad INT(3),
+    Peso VARCHAR(30),
+    Altura VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    udpated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
